@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+   /* font-size: 62.5%; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    height: 10vh;
+    background: lightblue;
+    width: 100%;
+    margin: auto;
+    align-items:center;
+    
+}
+
+.logo-container, .nav-links{
+    display: flex;
+}
+
+.logo-container{  
+    padding-left: 10px;
+    flex: 1;
+}
+nav{
+    flex: 2;  
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size: 18px; 
+    text-decoration: none;
+}
