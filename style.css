@@ -71,6 +71,11 @@ main {
 	background: url(img/UBC.jpg);
 }
 
+.the-card{
+    transform-style: preserve-3d;
+    transition: all  0.5s ease;
+}
+
 .box {
 	background-color: lightblue;
 	width: 30%;
@@ -82,7 +87,10 @@ main {
 	position: relative;
 	bottom: -5rem;
 	flex-direction: column;
-	justify-content: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    box-shadow: 0rem 1rem rgb(0, 0, 0, 0.1);
+
 }
 
 .box-title {
@@ -104,28 +112,9 @@ main {
 	background-color: rgba(173, 216, 230, 0.9);
 }
 
-.box-dropshadow {
-	box-shadow: 0rem 1rem rgb(0, 0, 0, 0.1);
-}
 
-/* .click-button {
-	position: relative;
-	bottom: -1.5rem;
-	text-align: center;
-} */
 
-/* .button-text {
-	padding: 1rem;
-	border-radius: 1rem;
-	border-style: none;
-	background-color: rgba(228, 228, 228, 0.75);
-	font-size: 1.75rem;
-	cursor: pointer;
-} */
 
-/* .button-text:hover {
-	background-color: rgba(228, 228, 228);
-} */
 
 /* ========================================================================== */
 /*  FOOTER
