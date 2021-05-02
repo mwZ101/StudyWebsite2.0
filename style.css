@@ -1,47 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-
-html{
-   /* font-size: 62.5%; */
-    font-family: 'Poppins', sans-serif;
+html {
+	font-size: 62.5%;
+	font-family: "Poppins", sans-serif;
 }
 
-
-
-header{
-    display: flex;
-    height: 10vh;
-    background: lightblue;
-    width: 100%;
-    margin: auto;
-    align-items:center;
-    
+header {
+	display: flex;
+	height: 10vh;
+	background: lightblue;
+	width: 100%;
+	margin: auto;
+	align-items: center;
 }
 
-.logo-container, .nav-links{
-    display: flex;
+.big-website-name {
+	margin: 10%;
+	font-size: 4rem;
 }
 
-.logo-container{  
-    padding-left: 10px;
-    color: darkblue;
-    flex: 1;
-}
-nav{
-    flex: 2;  
+.logo-container,
+.nav-links {
+	display: flex;
 }
 
-.nav-links{
-    justify-content: space-around;
-    list-style: none;
+.logo-container {
+	padding-left: 1;
+	color: black;
+	flex: 1;
 }
 
-.nav-link{
-    color: #5f5f79;
-    font-size: 18px; 
-    text-decoration: none;
+nav {
+	flex: 2;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav-link {
+	color: #5f5f79;
+	font-size: 1.8rem;
+	text-decoration: none;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box {
+	display: inline-block;
+	background-color: lightblue;
+	width: 38rem;
+	height: 40rem;
+	border-radius: 1.25rem;
+	border-style: solid;
+	border-width: 2px;
+	margin: 0rem 6rem;
+	position: relative;
+	bottom: -50px;
+}
+
+.box-title {
+	padding: 1.5rem;
+	font-size: 5rem;
+	text-align: center;
+}
+
+.section-desc {
+	display: block;
+	font-size: 2.5rem;
+	text-align: center;
+	max-height: fit-content;
+}
+
+.description {
+	position: absolute;
+	bottom: auto;
+}
+
+.click-button {
+	position: relative;
+	bottom: -150px;
+	text-align: center;
+}
+
+.button-text {
+	padding: 1rem;
+	border-radius: 1rem;
+	border-style: none;
+	background-color: rgba(228, 228, 228, 0.75);
+	font-size: 1.75rem;
+	cursor: pointer;
+}
+
+.button-text:hover {
+	background-color: rgba(228, 228, 228);
+}
+
+.box-dropshadow {
+	box-shadow: 0px 10px rgb(0, 0, 0, 0.1);
 }
