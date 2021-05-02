@@ -1,6 +1,6 @@
 :root{
-    --primary: #FFCE00;
-    --secondary: #FE4880;
+    --primary: #477eff;
+    --secondary: #ffffff;
     --dark: #212121;
     --light: #F3F3F3;
 }
@@ -68,6 +68,7 @@ nav {
 /* ========================================================================== */
 
 main{
+    background-image: url(img/UBC.jpg);
     width: 100%;
     height: 75vh;
     display:flex;
@@ -76,16 +77,22 @@ main{
 }
 
 .container{
+
     width: 30%;
     height: 100%;
 }
 .card{
+
     width: 100%;
     height: 70%;
 }
-
+.card:hover{
+    opacity:80%;
+    transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
 .card__inner,.card__inner2, .card__inner3{
-    width:100%;
+    top:20%;
+    width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -122,6 +129,7 @@ main{
 
 }
 .card__face--front h2{
+    text-align: center;
     color: #FFF;
     font-size: 3.2rem;
 }
@@ -158,12 +166,14 @@ main{
 
 
 
+
+
 /* ========================================================================== */
 /*  FOOTER
 /* ========================================================================== */
 
 footer {
-    
+    background-color:lightblue;
 	bottom: 0;
 	padding-bottom: 20px;
 	position: absolute;
