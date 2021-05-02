@@ -84,6 +84,7 @@ main {
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: transform 0.5s;
+	border-radius: 1.25rem;
 }
 
 .card:hover .card-inner {
@@ -97,7 +98,6 @@ main {
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	border-radius: 1.25rem;
 }
 
 .front {
@@ -143,6 +143,11 @@ main {
 
 .box-dropshadow {
 	box-shadow: 0rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+.back-description {
+	padding: 10% 20%;
+	font-size: 2vw;
 }
 
 /* .click-button {
