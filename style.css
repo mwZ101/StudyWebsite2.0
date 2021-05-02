@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html {
 	font-size: 62.5%;
 	font-family: "Poppins", sans-serif;
@@ -53,6 +54,21 @@ nav {
 
 .nav-link:hover {
 	background-color: rgba(255, 255, 255, 0.2);
+=======
+html{
+    font-size: 62.5%; 
+    font-family: 'Poppins', sans-serif;
+}
+/* ==== HEADER === */
+header{
+    display: flex;
+    height: 10vh;
+    background: lightblue;
+    width: 100%;
+    margin: auto;
+    align-items:center;
+    
+>>>>>>> b95f81a74582b913e5b108f9e8e1f5f4c27958b8
 }
 
 .box {
@@ -68,10 +84,18 @@ nav {
 	bottom: -50px;
 }
 
+<<<<<<< HEAD
 .box-title {
 	padding: 1.5rem;
 	font-size: 5rem;
 	text-align: center;
+=======
+.logo-container{  
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    color: darkblue;
+    flex: 1;
+>>>>>>> b95f81a74582b913e5b108f9e8e1f5f4c27958b8
 }
 
 .section-desc {
@@ -105,6 +129,83 @@ nav {
 	background-color: rgba(228, 228, 228);
 }
 
+<<<<<<< HEAD
 .box-dropshadow {
 	box-shadow: 0px 10px rgb(0, 0, 0, 0.1);
+=======
+.nav-link{
+    color: #5f5f79;
+    font-size: 1.8rem; 
+    text-decoration: none;
+>>>>>>> b95f81a74582b913e5b108f9e8e1f5f4c27958b8
 }
+
+/* === FOOTER === */
+footer{
+    bottom: 0;
+    background-color: lightblue;
+    padding-bottom: 20px;
+    position:absolute;
+    width: 100%;
+    bottom:0;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+.contact-us{
+    justify-content: center;
+    display: flex;
+    margin:2rem;
+}
+
+.social-menu ul {
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    
+}
+ 
+#twit{
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0rem);
+    box-shadow: 0rem 0.7rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+    opacity: 50%;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+    opacity: 50%;
+
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+    opacity: 50%;
+
+}
+
+.social-icon{
+    height: 4rem;
+    width: 4rem;
+}
+
