@@ -75,12 +75,12 @@ main{
 
 .box {
 	background-color: lightblue;
-	width: 35%;
+	width: 32%;
 	height: 40rem;
 	border-radius: 1.25rem;
 	border-style: solid;
 	border-width: 0.2rem;
-	margin: 0rem 6rem;
+	margin: 0rem 2%;
 	position: relative;
     bottom: -5rem;
     flex-direction: column;
@@ -196,4 +196,11 @@ footer {
 .social-icon {
 	height: 4rem;
 	width: 4rem;
+}
+
+
+@media (max-width: 768px) { 
+    .box-title {
+    font-size: 3rem;
+    } 
 }
