@@ -21,6 +21,7 @@ header {
 .big-website-name {
 	margin: 10%;
 	font-size: 4vw;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .logo-container,
@@ -128,10 +129,23 @@ main {
 	word-wrap: break-word;
 }
 
+.motivation-box-title {
+	padding: 8%;
+	font-size: 3vw;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.motivation-backside {
+	padding: 10% 15%;
+	font-size: 2vw;
+}
+
 .section-desc {
 	display: block;
-	font-size: 2vw;
-	text-align: center;
+	padding: 0.5vw 1.5vw;
+	font-size: 1.5vw;
+	text-align: left;
 	max-height: fit-content;
 	max-height: -moz-fit-content;
 }
@@ -146,8 +160,8 @@ main {
 }
 
 .back-description {
-	padding: 10% 20%;
-	font-size: 2vw;
+	padding: 10% 10% 10% 15%;
+	font-size: 1.75vw;
 }
 
 /* .click-button {
