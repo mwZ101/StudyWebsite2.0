@@ -84,7 +84,7 @@ main{
     height: 70%;
 }
 
-.card__inner,.card_inner2{
+.card__inner,.card__inner2, .card__inner3{
     width:100%;
     height: 100%;
     transition: transform 1s;
@@ -97,6 +97,10 @@ main{
     transform: rotateY(180deg);
 }
 .card__inner2.is-flipped2 {
+    transform: rotateY(180deg);
+}
+
+.card__inner3.is-flipped3 {
     transform: rotateY(180deg);
 }
 .card__face {
@@ -159,6 +163,7 @@ main{
 /* ========================================================================== */
 
 footer {
+    
 	bottom: 0;
 	padding-bottom: 20px;
 	position: absolute;
