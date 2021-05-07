@@ -176,17 +176,6 @@ main {
 	color: white;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
-}
-
-.card__header:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
 	border-radius: 0 0 50% 0;
 	background-image: linear-gradient(
 		to bottom left,
@@ -194,6 +183,8 @@ main {
 		var(--secondary) 115%
 	);
 }
+
+
 
 .section-desc {
 	display: block;
