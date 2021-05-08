@@ -1,18 +1,16 @@
 
 
-function display_timer(option){
+function display_timer(option, studyDur, breakDur){
+    
     if(option.id === "option-1-id"){
         // display 45
     }
     else if(option.id === "option-2-id"){
         // we know its 50 
     } else {
-        //document.getElementById('pop-out-box').timerStyle.display = "block";
+        //custom
     }
 }
-
-// const option3 = document.querySelector('option-3');
-// option3.addEventListener('click', open_custom_timer());
 
 function open_custom_timer() {
     document.getElementById("pop-out").style.display = "block";
@@ -26,12 +24,18 @@ function save_input() {
     let studyMin = document.getElementById("study-minutes-id").value;
     let breakMin = document.getElementById("break-minutes-id").value;
     
-    document.getElementById("custom-text-study-id").textContent = studyMin + " Minutes";
-    document.getElementById("custom-text-break-id").textContent = breakMin + " Minutes";
+    let studyID = document.getElementById("custom-text-study-id");
+    let breakID = document.getElementById("custom-text-break-id");
 
-    document.getElementById("custom-text-study-id").style.fontSize = "1.8vw";
-    document.getElementById("custom-text-break-id").style.fontSize = "1.8vw";
+    let option3ID = document.getElementById("option-3-id");
+
+    studyID.textContent = studyMin + " Minutes";
+    breakID.textContent = breakMin + " Minutes";
+
+    studyID.style.fontSize = "1.8vw";
+    breakID.style.fontSize = "1.8vw";
     
-    
+    option3ID.setAttribute("onclick", "displayTimer(this, " + studyMin + ", " + breakMin + ")");
+
     document.getElementById("pop-out").style.display = "none";
 }
