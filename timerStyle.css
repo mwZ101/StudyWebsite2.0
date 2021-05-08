@@ -182,14 +182,20 @@ main {
 	font-size: 5vw;
 }
 
-.popOutContainer {
+.pop-out-container {
+	display: none;
 	border: border-box;
 	border-color: black;
+	position: absolute;
+	z-index: 1;
+	
 }
 
-#popOutBox {
-	display: none;
+#pop-out-box {
+	background-color: red;
 }
+
+
 
 /* ========================================================================== */
 /*  FOOTER
