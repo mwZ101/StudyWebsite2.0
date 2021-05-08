@@ -45,6 +45,26 @@ Implementation Dates: May 7 -May 8, 2021
 				<div id="pop-out" class="pop-out-container">
 					<div id="pop-out-box">
 						<h2>Input Custom Timer</h2>
+						<input
+							type="number"
+							id="study-minutes-id"
+							class="study-minutes"
+							placeholder="Enter study minutes"
+							required
+						/>
+						<input
+							type="number"
+							id="break-minutes-id"
+							class="break-minutes"
+							placeholder="Enter break minutes"
+							required
+						/>
+						<button class="pop-out-save-button" onclick="save_input()">
+							Save
+						</button>
+						<button class="pop-out-close-button" onclick="close_custom_timer()">
+							Close
+						</button>
 					</div>
 				</div>
 
@@ -66,7 +86,7 @@ Implementation Dates: May 7 -May 8, 2021
 
 				<div
 					class="option-2"
-					id="option-1-id"
+					id="option-2-id"
 					onclick="display_timer(this, 0 , 0)"
 				>
 					<div class="study-box fifty">
@@ -84,14 +104,14 @@ Implementation Dates: May 7 -May 8, 2021
 				<!-- Card 3 -->
 				<!-- ======================================================================= -->
 
-				<div class="option-3" id="option-1-id" onclick="open_custom_timer()">
+				<div class="option-3" id="option-3-id" onclick="open_custom_timer()">
 					<div class="study-box custom-1">
 						<img src="img/study_icon.png" class="study-icon" />
-						<h2 class="study-time custom-text">+</h2>
+						<h2 id="custom-text-study-id" class="study-time custom-text">+</h2>
 					</div>
 					<div class="break-box custom-2">
 						<img src="img/break_icon.png" class="break-icon" />
-						<h2 class="break-time custom-text">+</h2>
+						<h2 id="custom-text-break-id" class="break-time custom-text">+</h2>
 					</div>
 				</div>
 			</div>

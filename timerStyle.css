@@ -161,6 +161,8 @@ main {
 	font-size: 1.8vw;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
+	width: 100%;
+	text-align: center;
 }
 
 .break-box {
