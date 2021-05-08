@@ -83,7 +83,7 @@ main {
 	align-items: center;
 }
 
-.card-1, .display-timer {
+.select-timer-page, .display-timer {
 	width: 40%;
 	height: 90%;
 	background-image: linear-gradient(
@@ -94,6 +94,13 @@ main {
 	border-radius: 1.6rem;
 	position: relative;
 }
+
+.display-timer{
+	display:none;
+}
+
+
+
 
 .title, .display-study-or-break-status {
 	text-align: center;
@@ -200,9 +207,7 @@ main {
 	height: 60%;
 }
 
-.display-timer{
-	
-}
+
 
 .display-timer .buttons{
 	display: flex;

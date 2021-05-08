@@ -31,7 +31,7 @@ Implementation Dates: May 7 -May 8, 2021
 		<!-- MAIN -->
 
 		<main>
-			<div class="card-1" id="card-1-id">
+			<div class="select-timer-page" id="select-timer-page-id">
 				<h1 class="title">Select Timer!</h1>
 				<div class="duration-explainer">
 					<div class="study-duration">
@@ -73,53 +73,55 @@ Implementation Dates: May 7 -May 8, 2021
 <!-- ======================================================================= -->
 <!-- Pop-out 1(Main Cards) -->
 <!-- ======================================================================= -->
-				
-				<div
+				<!div class="select-timer-page">
+					<div
 					class="option-1"
 					id="option-1-id"
 					onclick="display_timer(this, 0, 0)"
-				>
-					<div class="study-box fourty-five">
-						<img src="img/study_icon.png" class="study-icon" />
-						<h2 class="study-time">45 Minutes</h2>
+					>
+						<div class="study-box fourty-five">
+							<img src="img/study_icon.png" class="study-icon" />
+							<h2 class="study-time">45 Minutes</h2>
+						</div>
+						<div class="break-box fifteen">
+							<img src="img/break_icon.png" class="break-icon" />
+							<h2 class="break-time">15 Minutes</h2>
+						</div>
 					</div>
-					<div class="break-box fifteen">
-						<img src="img/break_icon.png" class="break-icon" />
-						<h2 class="break-time">15 Minutes</h2>
-					</div>
-				</div>
-				<div class="option-1_5"></div>
+					<div class="option-1_5"></div>
 
-				<div
-					class="option-2"
-					id="option-2-id"
-					onclick="display_timer(this, 0 , 0)"
-				>
-					<div class="study-box fifty">
-						<img src="img/study_icon.png" class="study-icon" />
-						<h2 class="study-time">50 Minutes</h2>
+					<div
+						class="option-2"
+						id="option-2-id"
+						onclick="display_timer(this, 0 , 0)"
+					>
+						<div class="study-box fifty">
+							<img src="img/study_icon.png" class="study-icon" />
+							<h2 class="study-time">50 Minutes</h2>
+						</div>
+						<div class="break-box ten">
+							<img src="img/break_icon.png" class="break-icon" />
+							<h2 class="break-time">10 Minutes</h2>
+						</div>
 					</div>
-					<div class="break-box ten">
-						<img src="img/break_icon.png" class="break-icon" />
-						<h2 class="break-time">10 Minutes</h2>
-					</div>
-				</div>
-				<div class="option-2_5"></div>
+					<div class="option-2_5"></div>
 
-				<!-- ======================================================================= -->
-				<!-- Card 3 -->
-				<!-- ======================================================================= -->
+					<!-- ======================================================================= -->
+					<!-- Card 3 -->
+					<!-- ======================================================================= -->
 
-				<div class="option-3" id="option-3-id" onclick="open_custom_timer()">
-					<div class="study-box custom-1">
-						<img src="img/study_icon.png" class="study-icon" />
-						<h2 id="custom-text-study-id" class="study-time custom-text">+</h2>
+					<div class="option-3" id="option-3-id" onclick="open_custom_timer()">
+						<div class="study-box custom-1">
+							<img src="img/study_icon.png" class="study-icon" />
+							<h2 id="custom-text-study-id" class="study-time custom-text">+</h2>
+						</div>
+						<div class="break-box custom-2">
+							<img src="img/break_icon.png" class="break-icon" />
+							<h2 id="custom-text-break-id" class="break-time custom-text">+</h2>
+						</div>
 					</div>
-					<div class="break-box custom-2">
-						<img src="img/break_icon.png" class="break-icon" />
-						<h2 id="custom-text-break-id" class="break-time custom-text">+</h2>
-					</div>
-				</div>
+				</!div>
+				
 				
 			</div>
 <!-- ======================================================================= -->
@@ -132,7 +134,7 @@ Implementation Dates: May 7 -May 8, 2021
 					<div class="buttons">
 						<button class="button-pause" id="button-pause-id" onclick = "pauseOrContinue()">Pause</button>
 						<button class="button-reset" onclick = "reset()">Reset</button>
-						<button class="button-back">Back</button>
+						<button class="button-back" onclick = "back()">Back</button>
 					</div>
 				</div>
 			</div>
