@@ -69,7 +69,6 @@ function generateQuote(){
     new_quote.id = "section-desc-3-id";
 
     document.getElementById('card__face card__face--front3-id').append(new_quote);
-
-    
- 
 }
+
+
