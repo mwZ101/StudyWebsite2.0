@@ -12,7 +12,7 @@ function display_timer(option, studyDur, breakDur){
         timer.textContent= "50:00";
         startingMinutes = 50;
     } else {
-        timer.textContent= studyDur + ":" + breakDur;
+        timer.textContent= studyDur + ":" + "00";
         startingMinutes = studyDur;
     }
 
@@ -21,31 +21,42 @@ function display_timer(option, studyDur, breakDur){
 
     function updateCountdown(){
         if(isReset){
-            document.getElementById('button-pause-id').textContent = "Continue";
-        } 
-        
+            time = startingMinutes * 60;
+        }
         if(!isPaused){
-            let minutesRemaining = Math.floor(time/60);
-            let seconds = time % 60;
-
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            timer.textContent = minutesRemaining+":"+seconds;
-            console.log(minutesRemaining+":"+seconds);
+            console.log("We are not paused");
             time--;
         }
+        console.log('isPaused is: ' + isPaused);
+        console.log('isReset is: ' + isReset);
+
+        let minutesRemaining = Math.floor(time/60);
+        let seconds = time % 60;
+
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        timer.textContent = minutesRemaining+":"+seconds;
+        console.log(minutesRemaining+":"+seconds);
     }
 }
 
-function pause(){ 
-    if(document.getElementById('button-pause-id').textContent === "Continue"){
+function pauseOrContinue(){ 
+    if(isPaused === true){
+        isPaused = false;
+        isReset = false;
         document.getElementById('button-pause-id').textContent = "Pause";
+    } else {
+        isPaused = true;
+        document.getElementById('button-pause-id').textContent = "Continue";
+
     }
-    isPaused = isPaused ? false : true;
 }
 
 function reset(){
-    isReset= isReset ? false : true;
-    isPaused = isPaused ? false : true;
+    if(isReset === true || isPaused === true){
+        return;
+    } 
+    isReset = true;
+    pauseOrContinue();
 }
 
 function open_custom_timer() {
