@@ -4,7 +4,7 @@ let isOnStudy = true;
 let isDone = false;
 
 function display_timer(option, studyDur, breakDur){
-    
+    document.getElementById('display-timer-id').style.display = "block";
     let timer = document.getElementById('timer-id');
     let studyingMinutes;
     let breakMinutes;
