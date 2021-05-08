@@ -31,7 +31,7 @@ Implementation Dates: May 7 -May 8, 2021
 		<!-- MAIN -->
 
 		<main>
-			<div class="card-1">
+			<div class="card-1" id="card-1-id">
 				<h1 class="title">Select Timer!</h1>
 				<div class="duration-explainer">
 					<div class="study-duration">
@@ -41,6 +41,9 @@ Implementation Dates: May 7 -May 8, 2021
 						<h2>Break Duration</h2>
 					</div>
 				</div>
+<!-- ======================================================================= -->
+<!-- Pop-out 1 -->
+<!-- ======================================================================= -->
 
 				<div id="pop-out" class="pop-out-container">
 					<div id="pop-out-box">
@@ -67,7 +70,10 @@ Implementation Dates: May 7 -May 8, 2021
 						</button>
 					</div>
 				</div>
-
+<!-- ======================================================================= -->
+<!-- Pop-out 2 -->
+<!-- ======================================================================= -->
+				
 				<div
 					class="option-1"
 					id="option-1-id"
@@ -112,6 +118,17 @@ Implementation Dates: May 7 -May 8, 2021
 					<div class="break-box custom-2">
 						<img src="img/break_icon.png" class="break-icon" />
 						<h2 id="custom-text-break-id" class="break-time custom-text">+</h2>
+					</div>
+				</div>
+				
+			</div>
+			<div class="display-timer" id="display-timer-id">
+				<div class="display-timer-content">
+					<h1 id="timer-id"></h1>
+					<div class="buttons">
+						<button class="display-timer button-pause" id="button-pause-id" onclick = "pause()">Pause</button>
+						<button class="display-timer button-reset" onclick = "reset()">Reset</button>
+						<button class="display-timer button-back">Back</button>
 					</div>
 				</div>
 			</div>
