@@ -1,7 +1,8 @@
 <!--
 Authors: Andy Liang, Marvin Wu 
 Implementation Dates: May 1st-May 2nd 2021
-Purpose: To provide helpful study tips, as well as a burst of motivation to students who may want it!
+Modified Date: May 7 - 8, 2021
+Purpose: To provide helpful study tips and tools, as well as a burst of motivation to students who may want it!
 -->
 
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ Purpose: To provide helpful study tips, as well as a burst of motivation to stud
 
 		<main>
 			<div class="container1">
-				<div class="card1">
+				<div class="card1" onclick="document.location='tipsPage.html'">
 					<div class="card__inner1">
 						<div class="card__face card__face--front1">
 							<h2>Tips for Better Studying</h2>
@@ -40,46 +41,48 @@ Purpose: To provide helpful study tips, as well as a burst of motivation to stud
 								aren't working? Try checking out these tips!
 							</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 			<div class="container2">
-				<div class="card2">
+				<div class="card2" onclick="document.location = 'timerPage.html'">
 					<div class="card__inner2">
 						<div class="card__face card__face--front2">
-							<h2>Poor Studying Methods</h2>
+							<h2>Study Timer</h2>
 
 							<p class="section-desc">
-								Are you doubting your studying methods? Try taking a look at
-								these methods and see if you are using any of them!
+								Use this timer to help manage your studying sessions!
 							</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
-<!-- ======================================================================= -->
-<!-- Card 3  -->
-<!-- ======================================================================= -->
+			<!-- ======================================================================= -->
+			<!-- Card 3  -->
+			<!-- ======================================================================= -->
 			<div class="container3">
 				<div class="card3">
 					<div class="card__inner3">
-						<div class="card__face card__face--front3" id = "card__face card__face--front3-id">
+						<div
+							class="card__face card__face--front3"
+							id="card__face card__face--front3-id"
+						>
 							<h2>Motivational Quotes</h2>
 
-							<p class="section-desc" id = "section-desc-3-id">
+							<p class="section-desc" id="section-desc-3-id">
 								Feeling a little unmotivated to study? Click the button!
 							</p>
-							<button class="button generate" onclick = "generateQuote()">Generate</button>
+							<button class="button generate" onclick="generateQuote()">
+								Generate
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-<!-- ======================================================================= -->
-<!-- Footer -->
-<!-- ======================================================================= -->
+		<!-- ======================================================================= -->
+		<!-- Footer -->
+		<!-- ======================================================================= -->
 		<footer class="bottom-bar">
 			<div class="social-menu">
 				<ul>
@@ -87,9 +90,7 @@ Purpose: To provide helpful study tips, as well as a burst of motivation to stud
 						<a href="#"><img class="social-icon" src="img/tam_fb.png" /></a>
 					</li>
 					<li id="twit">
-						<a href="#"
-							><img class="social-icon" src="img/tam_twit.png"
-						/></a>
+						<a href="#"><img class="social-icon" src="img/tam_twit.png" /></a>
 					</li>
 					<li>
 						<a href="#"><img class="social-icon" src="img/tam_insta.png" /></a>

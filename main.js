@@ -1,3 +1,5 @@
+//For studying methods page
+
 const card1= document.querySelector('.card__inner');
 const card2= document.querySelector('.card__inner2');
 
@@ -9,7 +11,7 @@ card2.addEventListener('click', function(){
     card2.classList.toggle('is-flipped2');
 });
 
-
+//For home page`
 
 
 function generateQuote(){
