@@ -95,7 +95,7 @@ main {
 	position: relative;
 }
 
-.title {
+.title, .display-study-or-break-status {
 	text-align: center;
 	margin: 1rem;
 	color: #fff;
