@@ -83,7 +83,7 @@ main {
 	align-items: center;
 }
 
-.card-1{
+.card-1 {
 	width: 50%;
 	height: 90%;
 	background-image: linear-gradient(
@@ -95,55 +95,67 @@ main {
 	position: relative;
 }
 
-.title{
+.title {
 	text-align: center;
 	margin: 1rem;
 	color: #fff;
-	font-size: 3vw;
+	font-size: 2.75vw;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
+	text-decoration: underline;
+	text-decoration-thickness: 0.15vw;
 }
-.duration-explainer{
+
+.duration-explainer {
 	display: flex;
 	justify-content: space-around;
 	margin: 1rem;
 	color: #fff;
-
 }
 
-.option-1, .option-2, .option-3{
-	height: 26%;
+.option-1,
+.option-2,
+.option-3 {
+	height: 24.5%;
 	display: flex;
 }
 
-.option-1:hover, .option-2:hover, .option-3:hover{
-	opacity:80%;
+.option-1:hover,
+.option-2:hover,
+.option-3:hover {
+	opacity: 80%;
 	cursor: pointer;
 }
 
-.option-1_5, .option-2_5{
-	height:2%;
+.option-1_5,
+.option-2_5 {
+	height: 2%;
 }
-
-
 
 .study-box {
 	background: #f6f6f2ba;
 }
-.study-icon, .break-icon{
+.study-icon,
+.break-icon {
 	height: 10rem;
 	width: 10rem;
 	opacity: 20%;
 	position: absolute;
 	top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.study-time, .break-time{
+.study-duration,
+.break-duration {
+	font-size: 1vw;
+}
+
+.study-time,
+.break-time {
 	position: absolute;
 	top: 50%;
-    left: 50%; 
+	left: 50%;
 	transform: translate(-50%, -50%);
 	color: black;
 	font-size: 2.3vw;
@@ -151,22 +163,33 @@ main {
 		"Lucida Sans", Arial, sans-serif;
 }
 
-.break-box{
+.break-box {
 	background: lightblue;
 	opacity: 80%;
 }
 
-
-.fourty-five, .fifteen, .fifty, .ten, .custom-1, .custom-2{
+.fourty-five,
+.fifteen,
+.fifty,
+.ten,
+.custom-1,
+.custom-2 {
 	width: 50%;
 	position: relative;
 }
 
-.custom-text{
+.custom-text {
 	font-size: 5vw;
-
 }
 
+.popOutContainer {
+	border: border-box;
+	border-color: black;
+}
+
+#popOutBox {
+	display: none;
+}
 
 /* ========================================================================== */
 /*  FOOTER

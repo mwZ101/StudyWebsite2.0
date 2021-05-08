@@ -9,7 +9,6 @@
 	--dark: #212121;
 	--light: #f3f3f3;
 	--hover: #f3f3f3;
-	
 }
 
 * {
@@ -89,21 +88,25 @@ main {
 	justify-content: space-around;
 }
 
-.container1, .container2, .container3 {
+.container1,
+.container2,
+.container3 {
 	width: 22%;
 	height: 100%;
 }
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
 	width: 100%;
 	height: 70%;
 }
-.card1:hover, .card2:hover {
+.card1:hover,
+.card2:hover {
 	opacity: 80%;
 	transform: rotate(0deg) skew(0deg) translate(0, -1rem);
 }
-.card3:hover{
+.card3:hover {
 	transform: rotate(0deg) skew(0deg) translate(0, -1rem);
-
 }
 .card__inner1,
 .card__inner2,
@@ -139,7 +142,9 @@ main {
 	box-shadow: 0rem 0.3rem 1.8rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
-.card__face--front1, .card__face--front2, .card__face--front3{
+.card__face--front1,
+.card__face--front2,
+.card__face--front3 {
 	background-image: linear-gradient(
 		to bottom right,
 		var(--primary),
@@ -147,9 +152,11 @@ main {
 	);
 	align-items: center;
 	justify-content: center;
-	text-align:center;
+	text-align: center;
 }
-.card__face--front1 h2, .card__face--front2 h2, .card__face--front3 h2 {
+.card__face--front1 h2,
+.card__face--front2 h2,
+.card__face--front3 h2 {
 	text-align: center;
 	color: #fff;
 	font-size: 3vw;
@@ -200,29 +207,27 @@ main {
 	max-height: fit-content;
 	max-height: -moz-fit-content;
 	color: #fff;
-	text-align:center;
+	text-align: center;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 }
 
-.generate:hover{
-  box-shadow: inset 0 0 0 2rem white;
+.generate:hover {
+	box-shadow: inset 0 0 0 2rem white;
 }
 
-.generate {  
-	color:darkblue;
-	transition: 0.25s;	
+.generate {
+	color: darkblue;
+	transition: 0.25s;
 	background: none;
 	border: 0.2rem solid;
 	margin: 0.5rem;
 	padding: 1rem 2rem;
-	bottom:5%;
+	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 	position: absolute;
 }
-
-
 
 /* ========================================================================== */
 /*  FOOTER

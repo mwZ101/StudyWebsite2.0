@@ -57,7 +57,7 @@ function generateQuote(){
         "Efforts and courage are not enough without purpose and direction. – John F. Kennedy",
         "Work gives you meaning and purpose and life is empty without it. – Stephen Hawking",
         "The whole purpose of education is to turn mirrors into windows. – Sydney J. Harris",
-        "The purpose of our lives is to be happy. – Dalai Lama",
+        "Knowing is not enough; We must apply. Willing is not enough; We must do. – Bruce Lee"
     ];
 
     let randomNum = Math.floor(Math.random()* 42);
