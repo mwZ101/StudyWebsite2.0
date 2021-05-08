@@ -41,6 +41,11 @@ function display_timer(option, studyDur, breakDur){
             if(!isPaused){
                 console.log("We are not paused");
                 studyTimeInSeconds--;
+
+                if (studyTimeInSeconds === 0) {
+                    ring();
+                }
+
                 if(studyTimeInSeconds === -1){
                     isOnStudy = false;
                 }
@@ -56,6 +61,11 @@ function display_timer(option, studyDur, breakDur){
             if(!isPaused){
                 console.log("We are not paused");
                 breakTimeInSeconds--;
+
+                if (breakTimeInSeconds === 0) {
+                    ring();
+                }
+                
                 if(breakTimeInSeconds === -1){
                     isDone = true;
                     return;
@@ -146,4 +156,11 @@ function save_input() {
     option3ID.setAttribute("onclick", "display_timer(this, " + studyMin + ", " + breakMin + ")");
 
     document.getElementById("pop-out").style.display = "none";
+}
+
+function ring() {
+
+    /* Credit for the alarm audio sound goes to Alexander from the OrangeFreeSounds Website */
+    let alarmSound = new Audio("audio/Tea-bell-sound-effect.mp3");
+    alarmSound.play();
 }
