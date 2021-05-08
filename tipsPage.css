@@ -1,0 +1,295 @@
+/*
+ * Authors: Andy Liang, Marvin Wu 
+ * Implementation Dates: May 1st-May 2nd 2021
+ * Purpose: To provide helpful study tips, as well as a burst of motivation to students who may want it!
+ */
+:root {
+	--primary: rgba(71, 126, 255);
+	--secondary: rgb(203, 217, 252);
+	--dark: #212121;
+	--light: #f3f3f3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	height: 10vh;
+	background-color: rgb(0, 0, 0);
+
+	width: 100%;
+	margin: auto;
+	align-items: center;
+}
+
+.big-website-name {
+	margin: 10%;
+	font-size: 3vw;
+}
+
+.logo-container,
+.nav-links {
+	display: flex;
+}
+
+.logo-container {
+	padding-left: 1;
+	color: rgb(255, 255, 255);
+	flex: 1;
+}
+
+nav {
+	flex: 2;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav-link {
+	color: #ffffff97; /* #5f5f79 */
+	font-size: 1.8rem;
+	text-decoration: none;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================================================== */
+/*  MAIN
+/* ========================================================================== */
+
+main {
+	background-image: url(img/UBC.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 82vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.container {
+	width: 22%;
+	height: 100%;
+}
+.card {
+	width: 100%;
+	height: 70%;
+	perspective: 1000px;
+}
+.card:hover {
+	opacity: 80%;
+	transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
+.card__inner,
+.card__inner2,
+.card__inner3 {
+	top: 20%;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+}
+
+.card__inner.is-flipped {
+	transform: rotateY(180deg);
+}
+.card__inner2.is-flipped2 {
+	transform: rotateY(180deg);
+}
+
+.card__inner3.is-flipped3 {
+	transform: rotateY(180deg);
+}
+
+.card__face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+	border-radius: 1.6rem;
+	box-shadow: 0rem 0.3rem 1.8rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary),
+		var(--secondary)
+	);
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding-top: 30%;
+}
+.card__face--front h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 3vw;
+	padding: 10%;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.section-desc {
+	display: block;
+	padding: 0.5vw 1.5vw;
+	font-size: 1.5vw;
+	text-align: left;
+	max-height: fit-content;
+	max-height: -moz-fit-content;
+	color: #fff;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.card__face--back {
+	background-color: var(--light);
+	transform: rotateY(180deg);
+}
+
+.back-description {
+	padding: 5% 10% 0% 15%;
+	font-size: 1.5vw;
+	flex-direction: column;
+	justify-content: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.card__content {
+	width: 100%;
+	height: 100%;
+}
+
+.card__header {
+	position: relative;
+	padding: 3rem 3rem 4rem;
+	font-size: 1.5vw;
+	color: white;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	border-radius: 0 0 50% 0;
+	background-image: linear-gradient(
+		to bottom left,
+		var(--primary) 10%,
+		var(--secondary) 115%
+	);
+}
+
+/* ========================================================================== */
+/*  FOOTER
+/* ========================================================================== */
+
+footer {
+	background: black;
+	bottom: 0;
+	padding-bottom: 0px;
+	position: absolute;
+	width: 100%;
+	height: 8vh;
+	justify-content: space-between;
+	align-items: center;
+}
+.contact-us {
+	justify-content: center;
+	display: flex;
+	margin: 2rem;
+}
+
+.social-menu ul {
+	padding: 1rem;
+	justify-content: center;
+	display: flex;
+}
+.social-menu ul li {
+	list-style: none;
+}
+
+#twit {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.social-menu ul li a {
+	position: relative;
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	text-align: center;
+	transition: 0.5s;
+	transform: translate(0, 0rem);
+	box-shadow: 0rem 0.7rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+	transform: rotate(0deg) skew(0deg) translate(0, -1rem);
+}
+.social-menu ul li:nth-child(1) a:hover {
+	background-color: #3b5999;
+	opacity: 50%;
+}
+.social-menu ul li:nth-child(2) a:hover {
+	background-color: #83acff;
+	opacity: 50%;
+}
+.social-menu ul li:nth-child(3) a:hover {
+	background-color: #e4405f;
+	opacity: 50%;
+}
+
+.social-icon {
+	height: 4rem;
+	width: 4rem;
+}
+
+@media (max-width: 768px) {
+	/* 768 */
+	.box-title {
+		font-size: 3rem;
+	}
+	.card__face--front h2 {
+		text-align: center;
+		color: #fff;
+		font-size: 3.2vw;
+		padding: 10%;
+	}
+	.section-desc {
+		font-size: 2vw;
+	}
+}
+
+@media (max-width: 700px) {
+	/* 768 */
+	.box-title {
+		font-size: 3rem;
+	}
+	.card__face--front h2 {
+		text-align: center;
+		color: #fff;
+		font-size: 3vw;
+		padding: 10%;
+	}
+
+	.section-desc {
+		font-size: 2vw;
+	}
+}
