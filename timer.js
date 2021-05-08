@@ -2,6 +2,7 @@ let isPaused = false;
 let isReset = false;
 let isOnStudy = true;
 let isDone = false;
+let wentBack = false;
 
 function display_timer(option, studyDur, breakDur){
     document.getElementById('display-timer-id').style.display = "block";
@@ -9,6 +10,7 @@ function display_timer(option, studyDur, breakDur){
     let timer = document.getElementById('timer-id');
     let studyingMinutes;
     let breakMinutes;
+
     if(option.id === "option-1-id"){
         timer.textContent= "45:00";
         studyingMinutes = 45;
@@ -27,9 +29,15 @@ function display_timer(option, studyDur, breakDur){
     let breakTimeInSeconds= breakMinutes * 60;
     let studyTimeInSeconds = studyingMinutes * 60;
  
-    setInterval(updateCountDown, 1000);
+    let runningInterval = setInterval(updateCountDown, 1000);
 
     function updateCountDown(){
+        if (wentBack) {
+            wentBack = false;
+            clearInterval(runningInterval);
+            return;
+        }
+
         if(isDone){
             document.getElementById('display-study-or-break-status-id').textContent = "You're done!";
             return;
@@ -65,7 +73,7 @@ function display_timer(option, studyDur, breakDur){
                 if (breakTimeInSeconds === 0) {
                     ring();
                 }
-                
+
                 if(breakTimeInSeconds === -1){
                     isDone = true;
                     return;
@@ -127,9 +135,11 @@ function reset(){
 
 
 function back(){
+    wentBack = true;
     document.getElementById('display-timer-id').style.display = "none";
     document.getElementById('select-timer-page-id').style.display = "block";
 }
+
 function open_custom_timer() {
     document.getElementById("pop-out").style.display = "block";
 }
