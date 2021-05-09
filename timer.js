@@ -70,7 +70,7 @@ function display_timer(option, studyDur, breakDur){
                 console.log("We are not paused");
                 breakTimeInSeconds--;
 
-                if (breakTimeInSeconds === 0) {
+                if (breakTimeInSeconds <= 0) {
                     ring();
                 }
 
@@ -132,8 +132,6 @@ function reset(){
     pauseOrContinue();
 }
 
-
-
 function back(){
     wentBack = true;
     document.getElementById('display-timer-id').style.display = "none";
@@ -154,18 +152,28 @@ function save_input() {
     
     let studyID = document.getElementById("custom-text-study-id");
     let breakID = document.getElementById("custom-text-break-id");
-
+    
     let option3ID = document.getElementById("option-3-id");
 
-    studyID.textContent = studyMin + " Minutes";
-    breakID.textContent = breakMin + " Minutes";
+    if (studyMin <= 0 || breakMin < 0) {
+        document.getElementById("invalid-number-text").style.display = "block";
 
-    studyID.style.fontSize = "1.8vw";
-    breakID.style.fontSize = "1.8vw";
+    } else {
+        studyID.textContent = studyMin + " Minutes";
+        breakID.textContent = breakMin + " Minutes";
+
+        studyID.style.fontSize = "1.8vw";
+        breakID.style.fontSize = "1.8vw";
+        
+        option3ID.setAttribute("onclick", "display_timer(this, " + studyMin + ", " + breakMin + ")");
+        
+        document.getElementById("invalid-number-text").style.display = "none";
+        document.getElementById("pop-out").style.display = "none";
+    }
+
     
-    option3ID.setAttribute("onclick", "display_timer(this, " + studyMin + ", " + breakMin + ")");
 
-    document.getElementById("pop-out").style.display = "none";
+    
 }
 
 function ring() {
