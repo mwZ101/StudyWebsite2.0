@@ -45,6 +45,8 @@ function display_timer(option, studyDur, breakDur){
         if(isOnStudy){
             if(isReset){
                 studyTimeInSeconds = studyingMinutes * 60;
+                breakTimeInSeconds = breakMinutes * 60;
+                document.getElementById('display-study-or-break-status-id').textContent = "Study Time Remaining";
             }
             if(!isPaused){
                 console.log("We are not paused");
@@ -129,6 +131,12 @@ function reset(){
     if(isReset === false && isPaused === true){
         isPaused = false;
     }
+
+    if(isDone) {
+        isOnStudy = true;
+        isDone = false;
+    }
+
     isReset = true;
     pauseOrContinue();
 }
