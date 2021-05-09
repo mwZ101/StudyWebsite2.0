@@ -137,6 +137,12 @@ function back(){
     wentBack = true;
     document.getElementById('display-timer-id').style.display = "none";
     document.getElementById('select-timer-page-id').style.display = "block";
+
+    if (isDone) {
+        isOnStudy = true;
+        isDone = false;
+        document.getElementById('display-study-or-break-status-id').textContent = "Study Time Remaining";
+    }
 }
 
 function open_custom_timer() {
