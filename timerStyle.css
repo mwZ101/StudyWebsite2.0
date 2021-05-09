@@ -242,6 +242,13 @@ main {
 	margin-right: auto;
 }
 
+#invalid-number-text {
+	font-size: 0.75vw;
+	text-align: center;
+	display: none;
+	margin-top: 5%;
+}
+
 .button-container {
 	width: 100%;
 	height: auto;
@@ -272,15 +279,14 @@ main {
 /* Popup (Display) */
 /* ========================================================================== */
 
-.display-timer{
-	align-items:center;
+.display-timer {
+	align-items: center;
 	text-align: center;
-	
 }
 
-.display-timer-content{
+.display-timer-content {
 	width: 100%;
-	align-items:center;
+	align-items: center;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -288,35 +294,39 @@ main {
 	transform: translate(-50%, -50%);
 }
 
-.display-study-or-break-status{
+.display-study-or-break-status {
 	font-size: 5vh;
 }
 
-.timer{
+.timer {
 	color: white;
 	font-size: 5vh;
 }
 
-.buttons{
+.buttons {
 	margin-top: 2rem;
-	display:flex;
+	display: flex;
 	justify-content: space-around;
 	text-align: center;
-
 }
-.button-pause:hover, .button-reset:hover, .button-back:hover{
+
+.button-pause:hover,
+.button-reset:hover,
+.button-back:hover {
 	box-shadow: inset 0 0 0 4rem white;
 }
 
-.button-pause, .button-reset, .button-back{
+.button-pause,
+.button-reset,
+.button-back {
 	text-align: center;
 	color: darkblue;
 	transition: 0.25s;
 	background: none;
 	border: 0.2rem solid;
-	margin: 0.5rem;
-	padding: 1rem 2rem;
-	font-size: 1.1vw; 
+	margin: 0.25rem;
+	padding: 1rem 3rem;
+	font-size: 1vw;
 }
 /* ========================================================================== */
 /*  FOOTER

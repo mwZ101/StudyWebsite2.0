@@ -109,6 +109,7 @@ function updateBreakCountDown(breakTimeInMinutes){
     document.getElementById('timer-id').textContent = minutesRemaining+":"+seconds;
     console.log(minutesRemaining+":"+seconds);
 }
+
 function pauseOrContinue(){ 
     if(isPaused === true){
         isPaused = false;
@@ -166,14 +167,11 @@ function save_input() {
         breakID.style.fontSize = "1.8vw";
         
         option3ID.setAttribute("onclick", "display_timer(this, " + studyMin + ", " + breakMin + ")");
-        
+
         document.getElementById("invalid-number-text").style.display = "none";
         document.getElementById("pop-out").style.display = "none";
     }
 
-    
-
-    
 }
 
 function ring() {
