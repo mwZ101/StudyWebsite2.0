@@ -54,7 +54,7 @@ function display_timer(option, studyDur, breakDur){
                     ring();
                 }
 
-                if(studyTimeInSeconds === -1){
+                if(studyTimeInSeconds === 0){
                     isOnStudy = false;
                 }
                 
@@ -74,7 +74,7 @@ function display_timer(option, studyDur, breakDur){
                     ring();
                 }
 
-                if(breakTimeInSeconds === -1){
+                if(breakTimeInSeconds === 0){
                     isDone = true;
                     return;
                 }
