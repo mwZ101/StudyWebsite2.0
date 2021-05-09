@@ -218,9 +218,56 @@ main {
 	width: 25%;
 }
 
+/* ========================================================================== */
+/* Popup (Display) */
+/* ========================================================================== */
 
+.display-timer{
+	align-items:center;
+	text-align: center;
+	
+}
 
+.display-timer-content{
+	width: 100%;
+	align-items:center;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.display-study-or-break-status{
+	font-size: 5vh;
+}
+
+.timer{
+	color: white;
+	font-size: 5vh;
+}
+
+.buttons{
+	margin-top: 2rem;
+	display:flex;
+	justify-content: space-around;
+	text-align: center;
+
+}
+.button-pause:hover, .button-reset:hover, .button-back:hover{
+	box-shadow: inset 0 0 0 4rem white;
+}
+
+.button-pause, .button-reset, .button-back{
+	text-align: center;
+	color: darkblue;
+	transition: 0.25s;
+	background: none;
+	border: 0.2rem solid;
+	margin: 0.5rem;
+	padding: 1rem 2rem;
+	font-size: 1.1vw; 
+}
 /* ========================================================================== */
 /*  FOOTER
 /* ========================================================================== */
