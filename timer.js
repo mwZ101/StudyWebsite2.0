@@ -74,7 +74,7 @@ function display_timer(option, studyDur, breakDur){
                     ring();
                 }
 
-                if(breakTimeInSeconds === 0){
+                if(breakTimeInSeconds === -1){
                     isDone = true;
                     return;
                 }
