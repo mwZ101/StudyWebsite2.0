@@ -324,9 +324,10 @@ main {
 	transition: 0.25s;
 	background: none;
 	border: 0.2rem solid;
-	margin: 0.25rem;
+	margin: 0.5rem;
 	padding: 1rem 3rem;
 	font-size: 1vw;
+	width: 25%;
 }
 /* ========================================================================== */
 /*  FOOTER
